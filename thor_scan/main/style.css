@@ -1,0 +1,137 @@
+/* Style global */
+body {
+    margin: 0;
+    font-family: "Source Sans Pro", sans-serif;
+    line-height: 1.4;
+    letter-spacing: 0.4px;
+    background-color: #0D0D0A;
+    color: white;
+}
+
+/* HEADER */
+.header {
+    background-color: #0D0D0A;
+    padding: 10px 20px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 25px;
+}
+
+/* Logo rond */
+.btn-img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 3px solid #FFFF00; /* jaune doux */
+    object-fit: cover;
+}
+
+/* Lien du menu */
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.2s;
+    border-radius: 10px;
+    padding-right: 10px;
+}
+
+.nav-link:hover {
+    transform: scale(1.1);
+    background-color: #ffff00ba;
+}
+
+/* Image dans le bouton Accueil */
+.textbutton {
+    height: 45px;
+    width: 45px;
+    object-fit: cover;
+}
+
+/* Contenu principal */
+.main {
+    background-color: #0D0D0A;
+    padding: 20px;
+}
+
+/* Pied de page */
+.footer {
+    background-color: #0D0D0A;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+}
+.section-title {
+    font-size: 28px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #FFFF00; /* jaune doux */
+    padding-bottom: 5px;
+    text-align: center;
+    font-family: 'Courier New', Courier,
+}
+.scan-row {
+  padding: 40px 20px;
+  background-color: #0D0D0A;
+}
+
+.section-title {
+  color: #FFD700;
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* Conteneur flex */
+.scans-container {
+  display: flex;           /* aligne les cartes sur une même ligne */
+  gap: 20px;               /* espace entre chaque scan */
+  overflow-x: auto;        /* permet de scroller si trop large */
+  padding-bottom: 10px;    /* un peu d'espace sous les images */
+}
+
+/* Chaque carte de scan */
+.scan-card {
+  min-width: 150px;  
+  max-width: 250px;      /* largeur fixe minimum */
+  background-color: #1a1a15;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  flex-shrink: 0;          /* empêche la carte de rétrécir */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.scan-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+}
+
+.scan-card p {
+  color: white;
+  margin: 10px 0;
+}
+
+/* Effet au survol */
+.scan-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+}
+.scan-card a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none; 
+  color: inherit; 
+}
+
+
