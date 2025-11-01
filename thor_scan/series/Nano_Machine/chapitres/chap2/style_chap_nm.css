@@ -70,10 +70,39 @@ body {
     display: block;     /* supprime les marges invisibles */
 }
 
-/* Footer */
-.footer {
-    text-align: center;
-    padding: 20px;
-    color: white;
+/* Navigation entre chapitres */
+.chap-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 40px 0;
 }
+
+.chap-btn {
+    background-color: #bac103;
+    color: #000000;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+.chap-btn:hover {
+    background-color: #dacc02;
+    transform: scale(1.05);
+}
+
+/* Petites flèches optionnelles */
+.chap-btn.prev::before {
+    content: "⬅ ";
+}
+
+.chap-btn.next::after {
+    content: " ➡";
+}
+
+
 
