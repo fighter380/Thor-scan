@@ -1,8 +1,73 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta http-equiv="refresh" content="0; url=main/main.html"/>
+    <meta charset="UTF-8">
+    <meta name="description" content="Voici un site de scan français de manhwa et manga">
+    <title>Bienvenue !!</title>
+    <!-- Chemin relatif corrigé -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header class="header">
+        <nav class="header-nav">
+            <!-- Logo rond -->
+            <a href="main.html" class="nav-button">
+                <img src="../icon/thor_logo.png" class="btn-img" alt="Logo Thor Scan">
+            </a>
+
+            <!-- Bouton Accueil -->
+            <a href="main.html" class="nav-link">
+                <img src="../icon/icon_accueil.png" class="textbutton" alt="Accueil">
+                <span>Accueil</span>
+            </a>
+            <a href="../catalogue.html" class="nav-link">
+                <img src="../icon/series-icon.png" class="textbutton" alt="Catalogue">
+                <span>Catalogue</span>
+            </a>
+        </nav>
+    </header>
+
+    <section class="scan-row">
+        <h2 class="section-title">Derniers Scans</h2>
+
+        <div class="scans-container">
+            <div class="scan-card">
+                <a href="../series/the_world_after_the_fall/page_twatf.html">
+                    <img src="../series/the_world_after_the_fall/twatf-poster.jpg" alt="The World After The Fall">
+                    <p>The World After The Fall</p>
+                </a>
+            </div>
+
+            <div class="scan-card">
+                <a href="../series/solo_leveling/page sl.html">
+                    <img src="../series/solo_leveling/poste_sl.jpg" alt="Solo Leveling">
+                    <p>Solo Leveling</p>
+                </a>
+            </div>
+
+            <div class="scan-card">
+                <a href="../series/Nano_Machine/page_nm.html">
+                    <img src="../series/Nano_Machine/poster_Nano.jpg" alt="Nano Machine">
+                    <p>Nano Machine</p>
+                </a>
+            </div>
+
+            <div class="scan-card">
+                <a href="../series/Horimiya/page_hr.html">
+                    <img src="../series/Horimiya/poster_hr.jpg" alt="Horimiya">
+                    <p>Horimiya</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <article class="main">
+        <!-- Contenu principal -->
+    </article>
+
+    <footer class="footer">
+        <p>Thor Scan - Tous droits réservés © 2025</p>
+        <p>Fait par Fighter</p>
+    </footer>
 </body>
 </html>
