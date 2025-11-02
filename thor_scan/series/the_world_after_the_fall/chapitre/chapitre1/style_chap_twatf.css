@@ -1,0 +1,114 @@
+/* Reset et style global */
+body {
+    margin: 0;
+    font-family: "Source Sans Pro", sans-serif;
+    background-color: #0D0D0A;
+    color: white;
+}
+
+/* Header */
+.header {
+    background-color: #0D0D0A;
+    padding: 10px 20px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 25px;
+}
+
+/* Logo rond */
+.btn-img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 3px solid #FFFF00; /* jaune doux */
+    object-fit: cover;
+}
+
+/* Lien du menu */
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.2s;
+    border-radius: 10px;
+    padding-right: 10px;
+}
+
+.nav-link:hover {
+    transform: scale(1.1);
+    background-color: #ffff00ba;
+}
+
+/* Image dans le bouton Accueil */
+.textbutton {
+    height: 45px;
+    width: 45px;
+    object-fit: cover;
+}
+
+/* Lecteur de scan */
+.chap-reader {
+    display: flex;
+    flex-direction: column; /* images empilées verticalement */
+    align-items: center;    /* centre les images sur grands écrans */
+    gap: 0;                 /* pas d'espace entre les pages si tu veux */
+    padding: 20px;
+}
+
+/* Images du chapitre */
+.page_scan {
+    width: 100%;        /* prend toute la largeur disponible */
+    max-width: 900px;   /* limite la taille sur grands écrans */
+    height: auto;       /* conserve les proportions */
+    display: block;     /* supprime les marges invisibles */
+}
+
+/* Navigation entre chapitres */
+.chap-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.chap-btn {
+    background-color: #bac103;
+    color: #000000;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+.chap-btn:hover {
+    background-color: #dacc02;
+    transform: scale(1.05);
+}
+
+/* Petites flèches optionnelles */
+.chap-btn.prev::before {
+    content: "⬅ ";
+}
+
+.chap-btn.next::after {
+    content: " ➡";
+}
+.page-debut {
+   border-top-left-radius: 20px;
+   border-top-right-radius: 20px;
+}
+.page-fin {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;  
+}
+

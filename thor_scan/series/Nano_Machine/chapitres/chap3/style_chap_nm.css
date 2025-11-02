@@ -103,6 +103,12 @@ body {
 .chap-btn.next::after {
     content: " ➡";
 }
-
-
+.page-debut {
+   border-top-left-radius: 20px;
+   border-top-right-radius: 20px;
+}
+.page-fin {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;  
+}
 
