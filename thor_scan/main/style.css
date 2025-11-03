@@ -133,5 +133,15 @@ body {
   text-decoration: none; 
   color: inherit; 
 }
-
+@media (max-width: 768px) {
+   .chap-btn prev{
+    width: 30px;
+    height: 15px;
+   }
+   .chap-btn next{
+    width: 30px;
+    height: 15px;
+   }
+  
+}
 
